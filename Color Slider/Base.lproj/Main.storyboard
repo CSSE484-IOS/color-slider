@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ObjC View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Color_Slider" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ObjCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="14" y="15" width="299" height="31"/>
                                 <color key="tintColor" red="1" green="0.1049824399" blue="0.044303805539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BXf-wq-8iO"/>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1GN-vA-8Ie"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhU-iv-GyM">
@@ -38,7 +38,7 @@
                                 <rect key="frame" x="14" y="60" width="299" height="31"/>
                                 <color key="tintColor" red="0.28137302946958609" green="1" blue="0.22938940324945789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cbv-Y2-gW5"/>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qkB-1i-79h"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJj-a9-flc">
@@ -50,7 +50,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cri-Bs-bog">
                                 <rect key="frame" x="14" y="109" width="299" height="31"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="a17-gE-8UL"/>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5bC-KL-e4j"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dx-b7-Vq7">
@@ -63,7 +63,7 @@
                                 <rect key="frame" x="14" y="159" width="299" height="31"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SqT-C1-VjZ"/>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="UbB-PQ-d71"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HW-al-HVi">
@@ -116,15 +116,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="alphaLabel" destination="5HW-al-HVi" id="FeF-un-RUF"/>
-                        <outlet property="alphaSlider" destination="FWZ-rO-k4a" id="H1f-yQ-fJm"/>
-                        <outlet property="blueLabel" destination="5Dx-b7-Vq7" id="EKQ-ax-5f9"/>
-                        <outlet property="blueSlider" destination="Cri-Bs-bog" id="awJ-cg-Amw"/>
-                        <outlet property="colorView" destination="7ul-7H-dWe" id="mEf-BG-5Gj"/>
-                        <outlet property="greenLabel" destination="qJj-a9-flc" id="wqZ-u9-gbS"/>
-                        <outlet property="greenSlider" destination="rLQ-mc-IHY" id="n1n-GV-gLs"/>
-                        <outlet property="redLabel" destination="NhU-iv-GyM" id="UON-FX-3YQ"/>
-                        <outlet property="redSlider" destination="Lyl-IG-5ZZ" id="BJ9-S5-Sg4"/>
+                        <outlet property="alphaLabel" destination="5HW-al-HVi" id="pWl-iD-VhH"/>
+                        <outlet property="alphaSlider" destination="FWZ-rO-k4a" id="G3U-Xy-2Kk"/>
+                        <outlet property="blueLabel" destination="5Dx-b7-Vq7" id="yRT-18-cx0"/>
+                        <outlet property="blueSlider" destination="Cri-Bs-bog" id="Vnc-9d-n61"/>
+                        <outlet property="colorView" destination="7ul-7H-dWe" id="1Pb-4u-POg"/>
+                        <outlet property="greenLabel" destination="qJj-a9-flc" id="jRb-z5-oX4"/>
+                        <outlet property="greenSlider" destination="rLQ-mc-IHY" id="Knb-Sc-ARc"/>
+                        <outlet property="redLabel" destination="NhU-iv-GyM" id="gbj-1y-dg8"/>
+                        <outlet property="redSlider" destination="Lyl-IG-5ZZ" id="gr0-9j-JSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
